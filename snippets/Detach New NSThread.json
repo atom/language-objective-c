@@ -1,0 +1,6 @@
+{
+  "content": "[NSThread detachNewThreadSelector:@selector(${1:method}:) toTarget:${2:aTarget} withObject:${3:anArgument}]",
+  "name": "Detach New NSThread",
+  "scope": "source.objc, source.objc++",
+  "tabTrigger": "thread"
+}

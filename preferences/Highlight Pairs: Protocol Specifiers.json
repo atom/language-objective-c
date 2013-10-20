@@ -1,0 +1,16 @@
+{
+  "name": "Highlight Pairs: Protocol Specifiers",
+  "scope": "meta.protocol-list.objc | meta.inherited-protocol.end.objc | meta.return-type.objc | meta.argument-type.objc",
+  "settings": {
+    "highlightPairs": [
+      [
+        "<",
+        ">"
+      ],
+      [
+        "(",
+        ")"
+      ]
+    ]
+  }
+}

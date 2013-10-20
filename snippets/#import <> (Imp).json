@@ -1,0 +1,6 @@
+{
+  "content": "#import <${1:Cocoa/Cocoa.h}>",
+  "name": "#import <…>",
+  "scope": "source.objc, source.objc++",
+  "tabTrigger": "Imp"
+}

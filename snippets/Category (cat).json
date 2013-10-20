@@ -1,0 +1,6 @@
+{
+  "content": "@interface ${1:${TM_FILENAME/.*?(\\w+).*|.*/(?1:$1:NSObject)/}} (${2:${TM_FILENAME/.*?\\w+\\W+(\\w+).*\\..+|.*/(?1:$1:Category)/}})\n@end\n\n@implementation $1 ($2)\n$0\n@end",
+  "name": "Category",
+  "scope": "source.objc, source.objc++",
+  "tabTrigger": "cat"
+}

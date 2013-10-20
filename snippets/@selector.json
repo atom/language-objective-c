@@ -1,0 +1,6 @@
+{
+  "content": "@selector(${1:method}:)",
+  "name": "@selector(…)",
+  "scope": "source.objc, source.objc++",
+  "tabTrigger": "sel"
+}

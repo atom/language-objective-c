@@ -1,0 +1,10 @@
+{
+  "beforeRunningCommand": "nop",
+  "command": "#!/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby\ntext = STDIN.read\n\ntext.gsub!(/(\\([^\\)]+)\\s+(\\*\\))/, '\\1\\2')\n\noffset_to_first_colon = text.index(':')\n\nargument_triplets = text.scan /(.+?):\\s*\\((.+?)\\)\\s*([^\\s]*)\\s*/\n\nprint(argument_triplets.collect do |triplet|\n\tsprintf \"%#{offset_to_first_colon}s:(%s)%s\", triplet[0], triplet[1], triplet[2]\nend.join(\"\\n\"))\n\nprint $1 if text.match /(\\n+)\\z/",
+  "fallbackInput": "scope",
+  "input": "selection",
+  "keyEquivalent": "^q",
+  "name": "Reformat Method Signature",
+  "output": "replaceSelectedText",
+  "scope": "meta.function.objc"
+}

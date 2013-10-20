@@ -1,0 +1,11 @@
+{
+  "beforeRunningCommand": "nop",
+  "bundleUUID": "4679484F-6227-11D9-BFB1-000D93589AF6",
+  "command": "#!/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby -wKU\nrequire \"#{ENV['TM_BUNDLE_SUPPORT']}/lib/docset_query.rb\"\n\ndocumentation_for_selector\n",
+  "fallbackInput": "scope",
+  "input": "selection",
+  "keyEquivalent": "^h",
+  "name": "Documentation for Selector",
+  "output": "showAsTooltip",
+  "scope": "(meta.bracketed.objc | meta.function.objc) - dyn.selection"
+}

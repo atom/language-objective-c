@@ -1,0 +1,6 @@
+{
+  "content": "@autoreleasepool {\n    $0\n}",
+  "name": "Autorelease Pool",
+  "scope": "source.objc, source.objc++",
+  "tabTrigger": "pool"
+}

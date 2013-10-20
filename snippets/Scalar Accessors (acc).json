@@ -1,0 +1,6 @@
+{
+  "content": "- (${1:unsigned int})${2:thing}\n{\n\treturn ${3:$2};\n}\n\n- (void)set${2/./\\u$0/}:(${1:unsigned int})new${2/./\\u$0/}\n{\n\t$3 = new${2/./\\u$0/};\n}",
+  "name": "Primitive Type",
+  "scope": "(source.objc | source.objc++) & meta.scope.implementation.objc - meta.function-with-body",
+  "tabTrigger": "acc"
+}

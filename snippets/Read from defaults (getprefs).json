@@ -1,0 +1,6 @@
+{
+  "content": "[[NSUserDefaults standardUserDefaults] objectForKey:${1:key}];",
+  "name": "Read Defaults Value",
+  "scope": "source.objc, source.objc++",
+  "tabTrigger": "getprefs"
+}

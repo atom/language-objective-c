@@ -1,0 +1,6 @@
+{
+  "content": "[NSString stringWithFormat:@\"$1\", $2]$0",
+  "name": "NSString With Format",
+  "scope": "source.objc, source.objc++",
+  "tabTrigger": "format"
+}

@@ -1,0 +1,10 @@
+{
+  "beforeRunningCommand": "nop",
+  "command": "#!/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby -wKU\n#\n#  Possible improvements:\n#   • Preserve empty lines between methods taken from the clipboard\n#   • Make the “parser” conform to the actual Objective-C spec\n#\nrequire ENV['TM_SUPPORT_PATH'] + '/lib/exit_codes'\n\nmethods = []\n\n%x{ pbpaste }.scan(/^\n  \\s*\n  ([-+])                    # Class or object method\n  (\\s* \\( ([^\\)]+) \\))?     # Optional return type\n  (\\s* [a-z0-9_]+)          # Method name\n\n  # Zero or more parameters:\n\n  ( (\\s* [a-z0-9_]*)        # Optional name of parameter\n    :                       # Mandatory colon\n    (\\s* \\( [^\\)]+ \\))?     # Optional type of parameter\n    (\\s* [a-z0-9_]+)        # Parameter name (might be optional)\n    (\\s* , \\s* ...)?        # Optional var-args notation\n  )*\n\n  (?=\\s* ;?)                # Optional semicolon\n\n/ix) do\n  rettype = $3.to_s.strip\n  methods << [$&.strip.gsub(' *)', (ENV['TM_C_POINTER'] || ' *').rstrip + ')'), rettype]\nend\n\nTextMate::exit_show_tool_tip('No methods found on the clipboard') if methods.empty?\n\nif ENV['TM_SCOPE'] !~ /meta.implementation.objc/\n  methods.each { |(proto, rettype)| puts \"#{proto};\" }\nelse\n  tabstop = 0\n  puts(methods.map do |(proto, rettype)|\n    ret = case rettype\n          when \"void\", \"IBAction\"\n            \"\"\n          when \"BOOL\"\n            \"\\treturn ${#{tabstop+=1}:Y}${1/^(?:(Y)|(N)|.*)/(?1:ES:(?2:O))/};\\n\"\n          else\n            \"\\treturn ${#{tabstop+=1}:nil};\\n\"\n          end\n    \"#{proto}\\n{\\n#{ret}}\\n\"\n  end.join(\"\\n\"))\nend\n",
+  "fallbackInput": "line",
+  "input": "none",
+  "keyEquivalent": "^V",
+  "name": "Paste Implementation / Interface",
+  "output": "insertAsSnippet",
+  "scope": "meta.interface-or-protocol.objc, meta.implementation.objc"
+}

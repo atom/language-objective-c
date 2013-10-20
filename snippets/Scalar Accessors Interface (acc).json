@@ -1,0 +1,6 @@
+{
+  "content": "- (${1:unsigned int})${2:thing};\n- (void)set${2/./\\u$0/}:($1)new${2/./\\u$0/};",
+  "name": "Interface: Accessors for Primitive Type",
+  "scope": "source.objc meta.scope.interface, source.objc++ meta.scope.interface",
+  "tabTrigger": "acc"
+}

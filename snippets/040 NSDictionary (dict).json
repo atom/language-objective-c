@@ -1,0 +1,6 @@
+{
+  "content": "NSMutableDictionary${TM_C_POINTER: *}${1:dict} = [NSMutableDictionary dictionary];",
+  "name": "NSDictionary",
+  "scope": "source.objc, source.objc++",
+  "tabTrigger": "dict"
+}

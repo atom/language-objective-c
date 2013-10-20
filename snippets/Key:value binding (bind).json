@@ -1,0 +1,6 @@
+{
+  "content": "bind:@\"${2:binding}\" toObject:${3:observableController} withKeyPath:@\"${4:keyPath}\" options:${5:nil}",
+  "name": "Bind Property to Key Path of Object",
+  "scope": "source.objc, source.objc++",
+  "tabTrigger": "bind"
+}
