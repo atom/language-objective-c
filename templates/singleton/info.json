@@ -1,6 +1,0 @@
-{
-  "command": "export TM_YEAR=`date +%Y`\nexport TM_DATE=`date +%Y-%m-%d`\nTM_HEADER=\"$TM_NEW_FILE_DIRECTORY/$TM_NEW_FILE_BASENAME.h\"\n\nif [[ ! (-f $TM_NEW_FILE || -f $TM_HEADER) ]]; then\n   perl -pe 's/\\$\\{([^}]*)\\}/$ENV{$1}/g' <class_in.mm >\"$TM_NEW_FILE\"\n   perl -pe 's/\\$\\{([^}]*)\\}/$ENV{$1}/g' <header_in.h >\"$TM_HEADER\"\nfi",
-  "extension": "mm",
-  "files": "printf \"$TM_NEW_FILE\\n$TM_NEW_FILE_DIRECTORY/$TM_NEW_FILE_BASENAME.h\"",
-  "name": "Singleton"
-}

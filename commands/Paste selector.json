@@ -1,9 +1,0 @@
-{
-  "beforeRunningCommand": "nop",
-  "command": "pbpaste|head -n1|perl -pe's/:\\(.+?\\)\\w+\\s*/:/g'|perl -pe's/^[-+]\\s*\\(.+?\\)\\s*|\\s+|;//g'",
-  "input": "none",
-  "keyEquivalent": "^V",
-  "name": "Paste selector",
-  "output": "afterSelectedText",
-  "scope": "meta.selector.objc"
-}
