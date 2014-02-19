@@ -11,6 +11,7 @@
     "type": "git",
     "url": "https://github.com/atom/language-objective-c.git"
   },
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/atom/language-objective-c/issues"
   }
