@@ -22,7 +22,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 --------------------------------------------------------------------
 
 This package was derived from a TextMate bundle located at
-https://github.com/atom/language-objective-c and distributed under the following
+https://github.com/textmate/objective-c.tmbundle and distributed under the following
 license, located in `README.mdown`:
 
 Permission to copy, use, modify, sell and distribute this
