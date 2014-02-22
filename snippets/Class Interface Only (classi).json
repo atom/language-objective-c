@@ -1,6 +1,0 @@
-{
-  "content": "@interface ${1:${TM_FILENAME/\\...*$|(^$)/(?1:object)/}} : ${2:NSObject}\n{$3\n}\n$0\n@end",
-  "name": "Class Interface",
-  "scope": "source.objc, source.objc++",
-  "tabTrigger": "clh"
-}

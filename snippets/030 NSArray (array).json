@@ -1,6 +1,0 @@
-{
-  "content": "NSMutableArray${TM_C_POINTER: *}${1:array} = [NSMutableArray array];",
-  "name": "NSArray",
-  "scope": "source.objc, source.objc++",
-  "tabTrigger": "array"
-}

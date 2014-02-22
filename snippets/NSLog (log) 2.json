@@ -1,6 +1,0 @@
-{
-  "content": "NSLog(@\"$1\"${1/[^%]*(%)?.*/(?1:, :\\);)/}$2${1/[^%]*(%)?.*/(?1:\\);)/}",
-  "name": "NSLog(…)",
-  "scope": "source.objc, source.objc++",
-  "tabTrigger": "log"
-}

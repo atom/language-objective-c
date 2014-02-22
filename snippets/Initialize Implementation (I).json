@@ -1,6 +1,0 @@
-{
-  "content": "+ (void)initialize\n{\n\t[[NSUserDefaults standardUserDefaults] registerDefaults:@{\n\t\t$0@\"key\" : @\"value\",\n\t}];\n}",
-  "name": "Method: Initialize",
-  "scope": "(source.objc | source.objc++) & meta.scope.implementation.objc - meta.function-with-body",
-  "tabTrigger": "I"
-}

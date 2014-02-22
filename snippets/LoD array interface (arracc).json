@@ -1,6 +1,0 @@
-{
-  "content": "- (void)addObjectTo${1:Things}:(${2:id})anObject;\n- (void)insertObject:($2)anObject in$1AtIndex:(unsigned int)i;\n- ($2)objectIn$1AtIndex:(unsigned int)i;\n- (unsigned int)indexOfObjectIn$1:($2)anObject;\n- (void)removeObjectFrom$1AtIndex:(unsigned int)i;\n- (unsigned int)countOf$1;\n- (NSArray${TM_C_POINTER/(^(.+?)\\s*$)?/(?1:$2: *)/})${1/./\\l$0/};\n- (void)set$1:(NSArray${TM_C_POINTER/(^(.+?)\\s*$)?/(?1:$2: *)/})new$1;",
-  "name": "Interface: Accessors for KVC Array",
-  "scope": "source.objc meta.scope.interface, source.objc++ meta.scope.interface",
-  "tabTrigger": "arracc"
-}

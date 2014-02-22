@@ -1,7 +1,0 @@
-{
-  ".source.objc\\+\\+, .source.objc": {
-    "editor": {
-      "foldEndPattern": "(?<!\\*)\\*\\*/|^\\s*\\}|^@end\\b"
-    }
-  }
-}

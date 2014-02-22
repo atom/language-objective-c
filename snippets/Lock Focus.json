@@ -1,6 +1,0 @@
-{
-  "content": "[self lockFocus];\n$0\n[self unlockFocus];",
-  "name": "Lock Focus",
-  "scope": "source.objc, source.objc++",
-  "tabTrigger": "focus"
-}

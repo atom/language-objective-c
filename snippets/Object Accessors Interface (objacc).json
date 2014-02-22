@@ -1,6 +1,0 @@
-{
-  "content": "- (${1:id})${2:thing};\n- (void)set${2/./\\u$0/}:($1)aValue;",
-  "name": "Interface: Accessors for Object",
-  "scope": "source.objc meta.scope.interface, source.objc++ meta.scope.interface",
-  "tabTrigger": "objacc"
-}

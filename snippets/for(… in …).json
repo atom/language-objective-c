@@ -1,6 +1,0 @@
-{
-  "content": "for(${1:id} ${2:item} in ${3:array})\n{\n\t$0\n}",
-  "name": "for(… in …)",
-  "scope": "source.objc, source.objc++",
-  "tabTrigger": "forin"
-}

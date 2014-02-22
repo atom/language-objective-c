@@ -1,6 +1,0 @@
-{
-  "content": "- (${1:id})${2:attribute}\n{\n\t[self willAccessValueForKey:@\"${2: attribute}\"];\n\t${1:id} value = [self primitiveValueForKey:@\"${2: attribute}\"];\n\t[self didAccessValueForKey:@\"${2: attribute}\"];\n\treturn value;\n}\n\n- (void)set${2/./\\u$0/}:($1)aValue\n{\n\t[self willChangeValueForKey:@\"${2: attribute}\"];\n\t[self setPrimitiveValue:aValue forKey:@\"${2: attribute}\"];\n\t[self didChangeValueForKey:@\"${2: attribute}\"];\n}",
-  "name": "CoreData",
-  "scope": "source.objc, source.objc++",
-  "tabTrigger": "cdacc"
-}

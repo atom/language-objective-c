@@ -1,6 +1,0 @@
-{
-  "content": "${TM_COMMENT_START} ${4:Send $2 to $1, if $1 supports it}${TM_COMMENT_END}\nif ([${1:self} respondsToSelector:@selector(${2:someSelector:})])\n{\n    [$1 ${3:${2/((:\\s*$)|(:\\s*))/:<>(?3: )/g}}];\n}",
-  "name": "Responds to Selector",
-  "scope": "source.objc, source.objc++",
-  "tabTrigger": "responds"
-}

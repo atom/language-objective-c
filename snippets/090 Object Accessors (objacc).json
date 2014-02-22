@@ -1,6 +1,0 @@
-{
-  "content": "- (${1:id})${2:thing}\n{\n\treturn $2;\n}\n\n- (void)set${2/./\\u$0/}:($1)aValue\n{\n\t$0${1/( \\*)?$/(?1:$1: )/}old${2/./\\u$0/} = $2;\n\t$2 = [aValue retain];\n\t[old${2/./\\u$0/} release];\n}",
-  "name": "Object",
-  "scope": "(source.objc | source.objc++) & meta.scope.implementation.objc - meta.function-with-body",
-  "tabTrigger": "objacc"
-}

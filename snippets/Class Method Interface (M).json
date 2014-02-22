@@ -1,6 +1,0 @@
-{
-  "content": "+ (${1:id})${0:method};",
-  "name": "Interface: Class Method",
-  "scope": "source.objc meta.scope.interface, source.objc++ meta.scope.interface",
-  "tabTrigger": "M"
-}

@@ -1,6 +1,0 @@
-{
-  "content": "@protocol ${1:${2:${TM_FILENAME:?${TM_FILENAME/\\..+$//}:My}}Delegate}${3: <NSObject>}\n$0\n@optional\n@end",
-  "name": "Protocol",
-  "scope": "source.objc, source.objc++",
-  "tabTrigger": "pro"
-}

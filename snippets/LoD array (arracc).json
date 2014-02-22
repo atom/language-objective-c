@@ -1,6 +1,0 @@
-{
-  "content": "- (void)addObjectTo${1:Things}:(${2:id})anObject\n{\n\t[${3:${1/./\\l$0/}} addObject:anObject];\n}\n\n- (void)insertObject:($2)anObject in$1AtIndex:(unsigned int)i \n{\n\t[$3 insertObject:anObject atIndex:i];\n}\n\n- ($2)objectIn$1AtIndex:(unsigned int)i\n{\n\treturn [$3 objectAtIndex:i];\n}\n\n- (unsigned int)indexOfObjectIn$1:($2)anObject\n{\n\treturn [$3 indexOfObject:anObject];\n}\n\n- (void)removeObjectFrom$1AtIndex:(unsigned int)i\n{\n\t[$3 removeObjectAtIndex:i];\n}\n\n- (unsigned int)countOf$1\n{\n\treturn [$3 count];\n}\n\n- (NSArray${TM_C_POINTER/(^(.+?)\\s*$)?/(?1:$2: *)/})${1/./\\l$0/}\n{\n\treturn $3;\n}\n\n- (void)set$1:(NSArray${TM_C_POINTER/(^(.+?)\\s*$)?/(?1:$2: *)/})new$1\n{\n\t[$3 setArray:new$1];\n}",
-  "name": "KVC Array",
-  "scope": "(source.objc | source.objc++) & meta.scope.implementation.objc - meta.function-with-body",
-  "tabTrigger": "arracc"
-}

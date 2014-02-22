@@ -1,6 +1,0 @@
-{
-  "content": "[NSGraphicsContext saveGraphicsState];\n$0\n[NSGraphicsContext restoreGraphicsState];\n",
-  "name": "Save and Restore Graphics Context",
-  "scope": "source.objc, source.objc++",
-  "tabTrigger": "gsave"
-}

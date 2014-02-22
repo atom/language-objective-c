@@ -1,6 +1,0 @@
-{
-  "content": "@interface ${1:${TM_FILENAME/\\...*$|(^$)/(?1:object)/}} : ${2:NSObject}\n{\n}\n@end\n\n@implementation $1\n- (id)init\n{\n\tif((self = [super init]))\n\t{$0\n\t}\n\treturn self;\n}\n@end",
-  "name": "Class",
-  "scope": "source.objc, source.objc++ - meta.scope.implementation.objc",
-  "tabTrigger": "cl"
-}

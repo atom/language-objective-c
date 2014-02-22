@@ -1,6 +1,0 @@
-{
-  "content": "@synthesize ${1:property};",
-  "name": "Synthesize Property",
-  "scope": "(source.objc | source.objc++) & meta.scope.implementation.objc - meta.function-with-body",
-  "tabTrigger": "syn"
-}

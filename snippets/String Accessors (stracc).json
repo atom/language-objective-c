@@ -1,6 +1,0 @@
-{
-  "content": "- (NSString${TM_C_POINTER/(^(.+?)\\s*$)?/(?1:$2: *)/})${1:thing}\n{\n\treturn ${2:$1};\n}\n\n- (void)set${1/.*/\\u$0/}:(NSString${TM_C_POINTER/(^(.+?)\\s*$)?/(?1:$2: *)/})${3:a${1/.*/\\u$0/}}\n{\n\t$3 = [$3 copy];\n\t[$2 release];\n\t$2 = $3;\n}",
-  "name": "String",
-  "scope": "(source.objc | source.objc++) & meta.scope.implementation.objc - meta.function-with-body",
-  "tabTrigger": "stracc"
-}
