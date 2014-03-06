@@ -1,6 +1,7 @@
 'fileTypes': [
   'm'
   'h'
+  'pch'
 ]
 'name': 'Objective-C'
 'patterns': [
