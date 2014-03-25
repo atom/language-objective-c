@@ -3,6 +3,8 @@
   'm'
   'h'
   'pch'
+  'xm'
+  'xmi'
 ]
 'name': 'Objective-C'
 'patterns': [
