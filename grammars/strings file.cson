@@ -1,3 +1,4 @@
+'scopeName': 'source.strings'
 'fileTypes': [
   'strings'
 ]
@@ -41,4 +42,3 @@
     ]
   }
 ]
-'scopeName': 'source.strings'

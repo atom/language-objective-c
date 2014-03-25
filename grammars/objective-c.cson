@@ -1,3 +1,4 @@
+'scopeName': 'source.objc'
 'fileTypes': [
   'm'
   'h'
@@ -825,4 +826,3 @@
         'name': 'variable.language.objc'
       }
     ]
-'scopeName': 'source.objc'
