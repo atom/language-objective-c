@@ -5,6 +5,7 @@
   'pch'
   'xm'
   'xmi'
+  'x'
 ]
 'name': 'Objective-C'
 'patterns': [
