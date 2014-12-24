@@ -1,4 +1,4 @@
-'.source.objc, .source.objc\\+\\+':
+'.source.objc, .source.objcpp':
   'editor':
     'completions': [
       'retain'
@@ -32,6 +32,6 @@
       'NSMutableString'
       'NSString'
     ]
-'.source.objc\\+\\+, .source.objc':
+'.source.objcpp, .source.objc':
   'editor':
     'foldEndPattern': '(?<!\\*)\\*\\*/|^\\s*\\}|^@end\\b'

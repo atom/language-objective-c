@@ -1,4 +1,4 @@
-'.source.objc, .source.objc\\+\\+':
+'.source.objc, .source.objcpp':
   '#import <>':
     'prefix': 'Imp'
     'body': '#import <${1:Cocoa/Cocoa.h}>'

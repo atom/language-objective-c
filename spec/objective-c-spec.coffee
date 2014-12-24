@@ -28,11 +28,11 @@ describe 'Language-Objective-C', ->
 
   describe "Objective-C++", ->
     beforeEach ->
-      grammar = atom.grammars.grammarForScopeName('source.objc++')
+      grammar = atom.grammars.grammarForScopeName('source.objcpp')
 
     it 'parses the grammar', ->
       expect(grammar).toBeTruthy()
-      expect(grammar.scopeName).toBe 'source.objc++'
+      expect(grammar.scopeName).toBe 'source.objcpp'
 
     it 'tokenizes classes', ->
       lines = grammar.tokenizeLines '''
@@ -45,5 +45,5 @@ describe 'Language-Objective-C', ->
         @end
       '''
 
-      expect(lines[0][2]).toEqual value: 'Thing1', scopes: ["source.objc++", "meta.class-struct-block.c++", "entity.name.type.c++"]
-      expect(lines[4][3]).toEqual value: 'Thing2', scopes: ["source.objc++", "meta.interface-or-protocol.objc", "entity.name.type.objc"]
+      expect(lines[0][2]).toEqual value: 'Thing1', scopes: ["source.objcpp", "meta.class-struct-block.c++", "entity.name.type.c++"]
+      expect(lines[4][3]).toEqual value: 'Thing2', scopes: ["source.objcpp", "meta.interface-or-protocol.objc", "entity.name.type.objc"]
