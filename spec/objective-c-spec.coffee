@@ -45,5 +45,5 @@ describe 'Language-Objective-C', ->
         @end
       '''
 
-      expect(lines[0][2]).toEqual value: 'Thing1', scopes: ["source.objcpp", "meta.class-struct-block.c++", "entity.name.type.c++"]
+      expect(lines[0][2].value).toBe 'Thing1'
       expect(lines[4][3]).toEqual value: 'Thing2', scopes: ["source.objcpp", "meta.interface-or-protocol.objc", "entity.name.type.objc"]
