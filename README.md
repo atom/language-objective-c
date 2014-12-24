@@ -1,4 +1,4 @@
-# Objective-C language support in Atom
+# Objective-C language support in Atom [![Build Status](https://travis-ci.org/atom/language-objective-c.svg?branch=master)](https://travis-ci.org/atom/language-objective-c)
 
 Adds syntax highlighting and snippets to Objective-C files in Atom.
 
