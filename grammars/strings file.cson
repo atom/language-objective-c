@@ -2,7 +2,7 @@
 'fileTypes': [
   'strings'
 ]
-'name': 'Strings File'
+'name': 'Strings File (Objective-C)'
 'patterns': [
   {
     'begin': '/\\*'
